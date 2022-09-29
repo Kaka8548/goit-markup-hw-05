@@ -51,11 +51,12 @@
         </ul>
       </div>
     </header>
+
     <main>
       <section class="banner">
         <div class="container">
           <h1 class="heading">Ефективні рішення для вашого бізнесу</h1>
-          <button class="order-btn" type="button">Замовити послугу</button>
+          <button class="order-btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="features">
@@ -346,6 +347,7 @@
         </div>
       </section>
     </main>
+
     <footer class="contacts">
       <div class="container">
         <div class="left-col">
@@ -402,5 +404,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="close-icon" width="11" height="11">
+            <use href="./images/symbol-defs.svg#icon-x"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
